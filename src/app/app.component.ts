@@ -1,4 +1,9 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {Router} from "@angular/router";
+import {KeycloakInstance} from "keycloak-js";
+import { KeycloakService } from 'keycloak-angular';
+import { Observable } from 'rxjs';
+import { AuthService } from './services/AuthService';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +11,11 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'kalidou';
+  
+
+
+  constructor() {}
+
+  
+
 }
